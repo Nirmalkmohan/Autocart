@@ -1,0 +1,18 @@
+
+<div class="my-ads-section">
+  <div class="my-ads-header">
+    <h2>My Ads</h2>
+  </div>
+  <div class="my-ads-list">
+    <div *ngFor="let ad of myAds" class="my-ad">
+      <div class="my-ad-image">
+        <img [src]="'http://localhost:8000' + ad.image" alt="{{ ad.name }}">
+      </div>
+      <div class="my-ad-details">
+        <h3>Ad ID : {{ ad.id }}</h3>
+        <p> Description : {{ ad.sellngItem }}</p>
+        <p> Price : {{ ad.price }}</p>
+      </div>
+    </div>
+  </div>
+</div>

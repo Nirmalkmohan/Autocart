@@ -1,0 +1,23 @@
+<div>
+<div class="chat-header">
+    <h2>{{ product.sellngItem }}</h2>
+  </div>
+  
+  <div class="chat-messages">
+    <div *ngFor="let message of messages">
+      <div class="message" [ngClass]="{ 'sent': message.sender==user_id, 'received': message.sender !==user_id }">
+        <p>{{ message.text }}<br></p>
+      
+        <p class="timestamp">{{ message.timestamp | date:'MMM d, h:mm a' }}</p>      
+      </div>
+    </div>
+  </div>
+      
+  <div class="chat-footer">
+    <form (submit)="onSubmit()">
+      <input type="text" [(ngModel)]="newMessage"  [ngModelOptions]="{ standalone: true }" placeholder="Type your message here...">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  
+</div>

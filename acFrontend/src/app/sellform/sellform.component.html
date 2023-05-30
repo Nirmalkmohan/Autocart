@@ -1,0 +1,21 @@
+<form [formGroup]="productForm">
+  <label for="product-name">Product Name:</label>
+  <input type="text" id="product-name" formControlName="sellngItem"><br><br>
+
+  <label for="category">Category:</label>
+  <select id="category" formControlName="Category">
+    <option *ngFor="let data of data" [ngValue]="data.id">{{ data.category_name }}</option>
+  </select><br><br>
+
+  <label for="product-price">Price:</label>
+  <input type="number" id="product-price" formControlName="price"><br><br>
+
+  <label for="product-description">Product Description:</label>
+  <textarea id="product-description" formControlName="description"></textarea><br><br>
+
+  <label for="product-image">Product Image:</label>
+  <input type="file" id="product-image" (change)="onImageSelect($event)"><br><br>
+
+  <button type="submit" [disabled]="productForm.invalid">Sell Product</button>
+</form>
+

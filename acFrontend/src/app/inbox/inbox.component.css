@@ -1,0 +1,43 @@
+/* Blue background color for the card header */
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
+
+/* White background color for the card body */
+.card-body {
+  background-color: white;
+}
+
+/* Blue text color for the product name */
+.card-title {
+  color: #007bff;
+  font-size: large;
+}
+
+/* Blue text color for the last message date */
+.text-muted small {
+  color: #007bff;
+}
+
+/* Blue text color for the link */
+.card-link {
+  color: #007bff;
+}
+
+/* Blue hover color for the link */
+.card-link:hover {
+  color: #0056b3;
+}
+
+/* Add margin to the card and remove the default list styling */
+.card {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+/* Add padding to the container and center it */
+.container {
+  padding: 1rem;
+  text-align: center;
+}

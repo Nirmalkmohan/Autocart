@@ -1,0 +1,7 @@
+<div class="product-list text-center btn btn">
+  <div class="product-card" *ngFor="let product of filteredProducts" (click)="showProductDetails(product.id)">
+    <img [src]= "product.image" style="max-width: 100%; height: 200px;">
+    <h3 class="product-name">{{ product.sellngItem }}</h3>
+    <p class="product-price">{{ product.price }}</p>
+  </div>
+</div>

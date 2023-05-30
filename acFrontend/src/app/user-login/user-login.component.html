@@ -1,0 +1,49 @@
+<!-- <div *ngIf="!loggedIn">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <label>username</label>
+        <input type="username" placeholder="" formControlName="username" class="form-control"  />
+        <label>Password</label>
+        <input type="password" placeholder="" formControlName="password" class="form-control"/>
+        <button type="submit" value="Add User">Login</button>      
+      </form>
+    </div>
+    <p>
+      Not have an account? <a [routerLink]="['/seller-signup']" href="seller-signup" >Sign Up Here</a>
+    </p>
+  </div>
+   -->
+  
+   <!-- <div *ngIf="!showLoginForm">
+   <form (submit)="onSubmit()">
+    <label>
+      Username:
+      <input type="text" [(ngModel)]="username" name="username" required>
+    </label>
+    <br>
+    <label>
+      Password:
+      <input type="password" [(ngModel)]="password" name="password" required>
+    </label>
+    <br>
+    <button type="submit">Login</button>
+  </form>
+</div> -->
+<div *ngIf="showLoginForm">
+<form (ngSubmit)="onSubmit()">
+  <!-- your form code here -->
+  <label>
+    Username:
+    <input type="text" [(ngModel)]="username" name="username" required>
+  </label>
+  <br>
+  <label>
+    Password:
+    <input type="password" [(ngModel)]="password" name="password" required>
+  </label>
+  <br>
+  <button  type="submit">Login</button>
+  <!-- <button mat-button (click)="closeDialog()">Close</button> -->
+</form>
+</div>

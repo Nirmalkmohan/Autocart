@@ -1,0 +1,14 @@
+<div class="product-details">
+  <div class="product-image">
+    <img src="{{product.image}}" alt="Product Image">
+  </div>
+  <div class="product-info">
+    <h2>{{product.sellngItem}}</h2>
+    <p class="product-description">{{product.description}}</p>
+    <p class="product-price">Price: ${{product.price}}</p>
+    <!-- <p class="product-contact">Contact seller: <a href="mailto:{{produ}}">{{product.sellerEmail}}</a></p> -->
+    <!-- <p class="product-location">Location: {{product?.location}}</p> -->
+    <button class="chat-seller" (click)="openContactSeller(product)">Chat with seller</button>
+</div>
+</div>
+  

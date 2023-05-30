@@ -1,0 +1,57 @@
+/* Navbar styling */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a:last-child {
+  margin-right: 0;
+}
+
+.sell-product {
+  margin-left: 20px;
+}
+
+.sell-product-button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sell-product-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.router-link-active {
+  text-decoration: underline;
+}

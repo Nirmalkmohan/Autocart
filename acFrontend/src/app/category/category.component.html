@@ -1,0 +1,8 @@
+<div>
+   
+    <select id="category" (change)="filterCategory($event)">
+      <option value="" selected disabled>Select a category</option>
+      <option *ngFor="let data of data" [value]="data.id" >{{ data.category_name }}</option>
+    </select><br><br>
+
+</div>

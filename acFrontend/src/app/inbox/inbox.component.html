@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3>Inbox</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled">
+            <li *ngFor="let thread of threads">
+              <a (click)="openContactSeller(thread)"class="card-link">
+                <div class="card mb-2">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ thread.product_name }}</h5>
+                    <p class="card-text">
+                      sender : {{ thread.username }}<br>message:{{ thread.last_message }}
+                    </p>
+                    <p class="card-text text-muted">
+                      <small>{{ thread.lastMessageDate | date:'short' }}</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

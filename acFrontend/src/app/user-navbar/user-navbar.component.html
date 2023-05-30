@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="#" class="logo">Cart</a>
+    
+    
+  </div>
+  <div class="navbar-right">
+    <a href="#"[routerLink]="['/inbox']" routerLinkActive="router-link-active" >Inbox</a>
+    <a href="#" [routerLink]="['/myAds']" routerLinkActive="router-link-active" >My Ads</a>
+    <a mat-button mat-icon-button (click)="openDialog()">
+      <span>{{ user.username }}</span>
+    </a>
+    
+    <div class="sell-product">
+      <button class="button sell-product-button"  [routerLink]="['/sell']" routerLinkActive="router-link-active">Sell product</button>
+    </div>
+  </div>
+</nav>
+
